@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "deploy-app": "git push origin master && git push heroku master && heroku open"
+    "start": "node server.js"
   },
   "author": "Eduardo Compiani",
   "license": "MIT",
