@@ -6,15 +6,15 @@ module.exports = {
   getTemp: function (location) {
     var encodedLocation = encodeURIComponent(location);
     var requestURL = `${OPEN_WEATHER_MAP_URL}&q=${encodedLocation}`;
-    
+
     return axios.get(requestURL).then(function (res) {
-      if (res.cod && res.message) {
-        throw new Error(res.message);
+      if (res.data.cod && res.data.message) {
+        throw new Error(res.datamessage);
       } else {
         return res.data.main.temp;
       }
     }, function (res) {
-      throw new Error(res.message);
+      throw new Error('Unable to fetch weather for that location');
     });
   }
 }
