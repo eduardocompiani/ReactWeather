@@ -1,19 +1,9 @@
 var React = require('react');
 
-// var About = React.createClass({
-//   render: function () {
-//     return (
-//       <div>
-//         <h2>About component</h2>
-//       </div>
-//     );
-//   }
-// });
-
-// example of arrow function
 var About = (props) => {
   return (
-    <h2>About component</h2>
+    <h2>About</h2>
+    <p>Welcome to About page!</p>
   );
 }
 
